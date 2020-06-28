@@ -1,0 +1,21 @@
+% !TEX root = ../main.tex
+\setheader{专利说明书附图}
+\begin{figure}[htbp]
+	\centering
+	\caption{外观图}
+	\label{外观图}
+	\psscalebox{0.8 0.8}{
+	\input{src/graph/appearance}
+	}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\caption{程序流程图}
+	\label{程序流程图}
+	\tikzset{global scale/.style={
+		scale=#1,
+		every node/.append style={scale=#1}
+	  }
+	}
+	\input{src/graph/flow}
+\end{figure}

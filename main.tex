@@ -1,0 +1,19 @@
+﻿% !!TEX program = xelatex
+% !!BIB program = bibtex
+\input{set/preclass}
+\documentclass{article}
+\input{set/default}
+\input{set/user}
+\input{set/article}
+\titlecontents{figure}[2.5em]{}{\contentslabel{2.5em}}{}{}%[]不能省略
+\begin{document}
+	\include{inc/abstract}
+	\include{inc/graph4abstract}
+	% \include{inc/contents}
+	\include{inc/claim}
+	%-------------------------------------------------------------------------------------------------------
+	\include{inc/specification}
+	\include{inc/graph4specification}
+	%-------------------------------------------------------------------------------------------------------
+	% \include{inc/index}
+\end{document}
